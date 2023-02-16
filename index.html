@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAAG Commerce</title>
+    <link rel="shortcut icon" href="assets/img/home.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src=".\assets\img\LogoJAAG.jpg" alt="" width="100">
+          Shop
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Productos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__btns">
+          <div class="nav__shop" id="cart-shop">
+            <a href="#cart" ><i class='bx bx-shopping-bag'></i></a>
+            <span id="cart-count" class="count"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__img-bg">
+            <img src="assets/img/home.png" alt="" class="home__img">
+          </div>
+          <div class="home__data">
+            <h1 class="home__title">Bienvenido a <br> JAAG Commerce</h1>
+            <p class="home__description">
+              Una nueva forma de adquirir tus coleccionables favoritos.<br>
+              <a href="#products" class="nav__link">Ver Productos</a><br>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="products" id="products">
+        <div class="products__container container">
+          <div class="products__content grid" id="products__content"></div>
+          <div class="cart" id="cart">
+            <h2 class="cart__title-center"><i class='bx bx-cart'></i> Carrito</h2>
+            <div id="cart__container" class="cart__container"></div>
+            <div class="cart__prices">
+              <span class="cart__prices-item"><span id="items-count"></span> Unidades</span>
+              <span class="cart__prices-total" id="cart-total"></span>
+            </div>
+            <div id="action-buttons" class="cart__checkout">
+              <button class="button cart__btn" id="cart-checkout" >
+                <i class='bx bxs-check-shield'></i> Comprar</button>
+              <button class="button cart__btn" id="cart-empty" >
+                <i class='bx bx-cart-alt'></i> Limpiar</button>
+            </div>
+            <div class="cart__title-center"><a href="#products" class="nav__linkp">Ir a Productos</a></div>
+          </div>
+        </div>
+      </section>
+      
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <h3 class="footer__title">Encuentranos</h3>
+          <ul class="footer__list">
+            <li>Pereira - Colombia</li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Sobre nosotros</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Centro de soporte</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Apoyo al cliente</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Derechos de autor</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Producto</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Juegos de Video</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Peliculas</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Series</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Social</h3>
+          <ul class="footer__social">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+              <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+              <i class='bx bxl-instagram'></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+        <span class="footer__copy">&#169; JAAG e-COMMERCE. Todos los derechos reservados</span>
+    </footer>
+    <div id="modalMsg1" class="modal">
+      <div class="inModal">
+        <span class="close">&times;</span>
+        <p>No hay stock suficiente</p>
+      </div>
+    </div>
+    <div id="modalMsg2" class="modal">
+      <div class="inModal">
+        <span class="close1">&times;</span>
+        <p>Producto Agotado</p>
+      </div>
+    </div>
+    <div id="modalMsg3" class="modal">
+      <div class="inModalTks">
+        <span class="close2">&times;</span>
+        <p>Gracias por su compra</p>
+      </div>
+    </div>
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+    <script src="assets/js/helpers/mixitup.min.js"></script>
+    <script src="./assets/js/main - copia.js" type="module"></script>
+    <script src="./assets/js/cart.js"></script>
+  </body>
+</html>
